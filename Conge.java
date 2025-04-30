@@ -12,9 +12,17 @@ public class Conge {
     public String getDateDebut() {
         return dateDebut;
     }
+      public void setDateDebut(String dateDebut) {
+        this.dateDebut = dateDebut;
+    }
 
     public String getDateFin() {
         return dateFin;
+    }
+   
+
+    public void setDateFin(String dateFin) {
+        this.dateFin = dateFin;
     }
 
     public boolean isValide() {
@@ -25,6 +33,7 @@ public class Conge {
         this.etat = etat;
     }
 
+
     @Override
     public String toString() {
         return "Conge{" +
@@ -34,11 +43,5 @@ public class Conge {
                '}';
     }
 
-    public void setDateDebut(String dateDebut) {
-        this.dateDebut = dateDebut;
-    }
-
-    public void setDateFin(String dateFin) {
-        this.dateFin = dateFin;
-    }
+   
 }

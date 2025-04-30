@@ -5,6 +5,14 @@ public class Directeur extends Personne implements IPoseurDeConge, IValidateurDe
         super(nom, prenom);
         this.nbrEmploye = nbrEmploye;
     }
+    
+    public int getNbrEmploye() {
+        return nbrEmploye;
+    }
+
+    public void setNbrEmploye(int nbrEmploye) {
+        this.nbrEmploye = nbrEmploye;
+    }
 
     @Override
     public void poserConge(String dateDebut, String dateFin) {
@@ -25,11 +33,4 @@ public class Directeur extends Personne implements IPoseurDeConge, IValidateurDe
         System.out.println("Le directeur " + nom + " a validé le congé de " + employe.getNom() + ": " + conge);
     }
 
-    public int getNbrEmploye() {
-        return nbrEmploye;
-    }
-
-    public void setNbrEmploye(int nbrEmploye) {
-        this.nbrEmploye = nbrEmploye;
-    }
 }
